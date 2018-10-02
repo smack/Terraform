@@ -12,7 +12,9 @@ Prequisits:
 -----------------------
 git clone the directory and execute "terrform init"
 
-1) Generate a key pair from your AWS account portal and download a copy of PEM file in ssh/ folder
+1) Generate a key pair from your AWS account portal and download a copy of PEM file and put it in ssh/ folder
+	Note: cd Terraform
+	      mkdir ssh
 2) update the default key_name in variable.tf with name of your pem file
 	variable "key_name" {
 	  description = "Key name for SSHing into EC2"

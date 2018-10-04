@@ -13,13 +13,3 @@ variable "instance_type" {
   default = "t2.micro"
 }
 
-variable "key_path" {
-  description = "Key path for SSHing into EC2"
-  default  = "./ssh/aspendevops.pem"
-}
-
-variable "key_name" {
-  description = "Key name for SSHing into EC2"
-  default = "aspendevops"
-}
-

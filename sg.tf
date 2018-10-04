@@ -1,7 +1,7 @@
 # Define the security group for instancea
 
 resource "aws_security_group" "sg"{
-  name = "ROB"
+  name = "BOB"
  ingress {
     from_port   = 22
     to_port     = 22
@@ -31,7 +31,7 @@ resource "aws_security_group" "sg"{
   }
 
   tags {
-    Name = "ROB"
+    Name = "BOB"
   }
 }
 

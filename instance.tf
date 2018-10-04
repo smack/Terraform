@@ -2,7 +2,7 @@
 resource "aws_instance" "w" {
    ami  = "${var.ami}"
    instance_type = "${var.instance_type}"
-   security_groups = [  "ROB" ]
+   security_groups = [  "BOB" ]
    associate_public_ip_address = true
    source_dest_check = false
    key_name = "terraform_ec2_key"
@@ -10,6 +10,6 @@ resource "aws_instance" "w" {
      command = "echo ${aws_instance.w.public_ip} >> /etc/ansible/hosts"}
 
   tags {
-    Name = "ROB"
+    Name = "BOB"
   }
 }

@@ -27,7 +27,7 @@ file="terraform.tfstate"
 # check if the Instance active state exists
 
 if [ -f states/terraform.tfstate_$NAME ]; then 
-	echo "Instance with that name already"
+	echo "Instance with that name already exists"
 	exit 1
 else 
 	echo "Creating state file"
@@ -41,7 +41,6 @@ if [ $REGION == ap-south-1 ]; then
         AMI="ami-04ea996e7a3e7ad6b"
 elif [ $REGION == us-east-1 ]; then
         AMI="ami-059eeca93cf09eebd"
-#	AMI="ami-06b5810be11add0e2"
 elif [ $REGION == us-east-2 ]; then
         AMI="ami-0782e9ee97725263d"
 elif [ $REGION == us-west-1 ]; then

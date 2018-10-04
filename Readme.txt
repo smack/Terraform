@@ -38,7 +38,7 @@ git clone the directory and execute "terrform init"
 	note: By default ansible has hostkey checking enabled. So, it asks to accept the key first time when you try connecting ansible controller to newly deployed EC2 instance. This can be handeled by updating the /etc/ansible/ansible.cfg file.
 		Ref - https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html#host-key-checking
 	
-6) To destroy the created AWS Infrastructure
+7) To destroy the created AWS Infrastructure
 	./destory NAME=<Name of created instance>
 
 	note: This script tatkes care of updating the ansible inventory after deleting the EC2 instance
